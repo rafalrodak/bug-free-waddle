@@ -215,4 +215,8 @@ footer {
         display: block;
         text-align: center;
     }
+
+    h1 {
+        font-size: 2.8em;
+    }
 }
