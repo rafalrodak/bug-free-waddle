@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Podróże - Rafał Rodak</title>
+        <link rel="stylesheet" href="rubik/rubik.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="menu">
+            <img id="close_menu" src="res/close.svg">
+            <a href="index.html">
+                <div class="card">
+                    Strona<br>główna >
+                </div>
+            </a>
+            <a href="about.html">
+                <div class="card">
+                    O mnie<br>>
+                </div>
+            </a>
+            <a href="series.html">
+                <div class="card">
+                    Seriale<br>>
+                </div>
+            </a>
+        </div>
+        <div id="show_menu_bg"></div>
+        <img id="show_menu" src="res/menu.svg">
+        <article class="single">
+            <h1 class="dim">Podróże</h1>
+
+            Uwielbiam podróżować. Moim ulubionym kierunkiem są kraje śródziemnomorskie. Zwiedziłem już Włochy, Grecję, Węgry, Bułgarię oraz Chorwację. Interesuje mnie również poznawanie rodzinnych okolic, piękna polskiej natury.
+
+            <img src="res/greece2.jpg" class="small">
+            <img src="res/Bulgaria-©-SSokolov-Shutterstock.jpg" class="small">
+            <img src="res/5104226627001_5244692815001_5214840463001-vs.jpg" class="small">
+            <img src="res/EUROPEMEDITERRANEANITALYCON_ITAITALIANCITIESVENICERES_000655.jpg" class="small">
+        </article>
+        <footer>
+            <a href="index.html">
+                <div class="card">
+                    Strona<br>główna >
+                </div>
+            </a>
+            <a href="about.html">
+                <div class="card">
+                    O mnie<br>>
+                </div>
+            </a>
+            <a href="series.html">
+                <div class="card">
+                    Seriale<br>>
+                </div>
+            </a>
+        </footer>
+        <script>
+            document.getElementById("show_menu").addEventListener("click", function() {
+                document.getElementById("menu").style.display = "block";
+            });
+            document.getElementById("close_menu").addEventListener("click", function() {
+                document.getElementById("menu").style.display = "none";
+            });
+        </script>
+    </body>
+</html>

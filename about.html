@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>O mnie - Rafał Rodak</title>
+        <link rel="stylesheet" href="rubik/rubik.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="menu">
+            <img id="close_menu" src="res/close.svg">
+            <a href="index.html">
+                <div class="card">
+                    Strona<br>główna >
+                </div>
+            </a>
+            <a href="series.html">
+                <div class="card">
+                    Seriale<br>>
+                </div>
+            </a>
+            <a href="travel.html">
+                <div class="card">
+                    Podróże<br>>
+                </div>
+            </a>
+        </div>
+        <div id="show_menu_bg"></div>
+        <img id="show_menu" src="res/menu.svg">
+        <article class="single">
+            <h1 class="dim">My name is</h1>
+            <h1>Rafał Rodak</h1>
+
+            Nazywam się Rafał, mam 17 lat, jestem uczniem II Liceum Ogólnokształcącego im. KEN w Puławach. Jestem w klasie o profilu matematyczno-fizycznym. Uczęszczałem do Publicznego Gimnazjum im Henryka Sienkiewicza w Końskowoli. Mam młodsze rodzeństwo - Kamila i Martynę. Chętnie spędzam czas z moją rodziną. Moją pasją są podróże. Odwiedziłem już wiele państw, byłem m. in. we Włoszech, Grecji, Szwecji czy Bułgarii. Lubię spotykać się z moimi przyjaciółmi i aktywnie spędzać czas. Mój ulubiony sport to koszykówka. Przyjemność sprawia mi również czytanie książek i oglądanie seriali. Lubię i umiem gotować, chociaż w czasie roku szkolnego nie mam na to czasu. Uważam, że trzeba korzystać z okazji jakie znajdujemy na naszej drodze życiowej. W przyszłości chciałbym założyć własną firmę.
+        </article>
+        <footer>
+            <a href="index.html">
+                <div class="card">
+                    Strona<br>główna >
+                </div>
+            </a>
+            <a href="series.html">
+                <div class="card">
+                    Seriale<br>>
+                </div>
+            </a>
+            <a href="travel.html">
+                <div class="card">
+                    Podróże<br>>
+                </div>
+            </a>
+        </footer>
+        <script>
+            document.getElementById("show_menu").addEventListener("click", function() {
+                document.getElementById("menu").style.display = "block";
+            });
+            document.getElementById("close_menu").addEventListener("click", function() {
+                document.getElementById("menu").style.display = "none";
+            });
+        </script>
+    </body>
+</html>
