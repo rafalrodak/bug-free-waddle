@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Rafał Rodak</title>
+        <link rel="stylesheet" href="rubik/rubik.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="menu">
+            <img id="close_menu" src="res/close.svg">
+            <a href="about.html">
+                <div class="card">
+                    O mnie<br>>
+                </div>
+            </a>
+            <a href="series.html">
+                <div class="card">
+                    Seriale<br>>
+                </div>
+            </a>
+            <a href="travel.html">
+                <div class="card">
+                    Podróże<br>>
+                </div>
+            </a>
+        </div>
+        <img id="show_menu" src="res/menu.svg">
+        <article>
+            <aside style="background: url(res/3.jpg) center center; background-size: cover;">
+            </aside>
+            <section>
+                <div>
+                    <h1 class="dim">My name is</h1>
+                    <h1>Rafał Rodak</h1>
+
+                    Nazywam się Rafał, mam 17 lat, jestem uczniem II Liceum Ogólnokształcącego im. KEN w Puławach.<br>
+
+                    <button>Więcej informacji o mnie</button>
+                </div>
+            </section>
+        </article>
+        <article class="flipped">
+            <aside style="background: url(res/seriale.jpg) center center; background-size: cover; background-attachment: fixed">
+            </aside>
+            <section>
+                <div>
+                    <h1 class="dim">Ulubione seriale</h1>
+
+                    W wolnych chwilach lubię oglądać zagraniczne seriale. Nie ograniczam się do jednego gatunku, chociaż najbardziej interesują mnie fantasy, komedie, kryminały, science-fiction, akcji oraz anime.<br>
+
+                    <button>Więcej informacji</button>
+                </div>
+            </section>
+        </article>
+        <article>
+            <aside style="background: url(res/2.jpg) center center; background-size: cover;">
+            </aside>
+            <section>
+                <div>
+                    <h1 class="dim">Podróże</h1>
+
+                    Uwielbiam podróżować. Moim ulubionym kierunkiem są kraje śródziemnomorskie.<br>
+
+                    <button>Więcej informacji</button>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <a href="about.html">
+                <div class="card">
+                    O mnie<br>>
+                </div>
+            </a>
+            <a href="series.html">
+                <div class="card">
+                    Seriale<br>>
+                </div>
+            </a>
+            <a href="travel.html">
+                <div class="card">
+                    Podróże<br>>
+                </div>
+            </a>
+        </footer>
+        <script>
+            document.getElementById("show_menu").addEventListener("click", function() {
+                document.getElementById("menu").style.display = "block";
+            });
+            document.getElementById("close_menu").addEventListener("click", function() {
+                document.getElementById("menu").style.display = "none";
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+body {
+    font-family: rubik;
+    background: #F6D155;
+    color: #004B8D;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14pt;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.dim {
+    color: #4C6A92;
+}
+
+article {
+    position: relative;
+    height: 100vh;
+    display: block;
+}
+
+article aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+}
+
+article section {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5em;
+    display: flex;
+    align-items: center;
+}
+
+article.flipped aside {
+    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+article.flipped section {
+    left: 0;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+}
+
+button {
+    margin-top: 1em;
+    background: #F6D155;
+    color: #004B8D;
+    font-family: rubik;
+    font-size: 14pt;
+    font-weight: 500;
+    padding: 6pt 18pt;
+    border: 2px solid #004B8D;
+    border-radius: 50pt;
+    outline: 0;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #004B8D;
+    color: #F6D155;
+}
+
+img#show_menu {
+    position: fixed;
+    left: 16px;
+    top: 16px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+div#menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 96px 32px;
+    display: none;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img#close_menu {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+div.card {
+    background: #4C6A92;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 192px;
+    height: 96px;
+    padding: 12px 18px;
+    box-shadow: 0px 12px 48px rgba(0, 0, 0, 0.3);
+    margin: 16px;
+    transition: all 0.3s;
+}
+
+div.card:hover {
+    background: #004B8D;
+    padding: 12px 14px 12px 22px;
+    transform: scale(1.02);
+    box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+@media (orientation: portrait) {
+    article aside {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 50%;
+    }
+
+    article section {
+        left: 0;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+    }
+
+    article.flipped aside {
+        left: 0;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+    }
+
+    article.flipped section {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 50%;
+    }
+
+    div#menu {
+        width: calc(100% - 64px);
+    }
+}
