@@ -180,12 +180,17 @@ footer {
         height: unset;
     }
 
+    article.single {
+        padding: 5em 2em !important;
+    }
+
     article aside, article section {
         position: relative;
         left: unset;
         top: unset;
         right: unset;
         bottom: unset;
+        padding: 2em !important;
     }
 
     article.flipped aside, article.flipped section {
@@ -194,6 +199,7 @@ footer {
         top: unset;
         right: unset;
         bottom: unset;
+        padding: 2em !important;
     }
 
     aside {
